@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main_header{
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ /* padding: 1rem; */
+
+
+}
+.menuButtonContainer{
+    position: absolute;
+    background-color: transparent;
+    width: 2rem;
+    height: 100%;
+    outline: none;
+    right: 1rem;
+    top:0;
+    border: none;
+    margin-inline-end: 1rem;
+}
+.menuButtonContainer .hamburger,.hamburger::before,.hamburger::after {
+     background-color: black;
+     width:2rem;
+     height: 3px;
+     position:absolute;
+     display: block;
+     z-index: 100;
+     
+
+
+}
+
+.hamburger::before{
+  content: "";
+  position: absolute;
+  margin-top: -6px;
+}
+.hamburger::after{
+  content: "";
+  position: absolute;
+  margin-top: 6px;
+}
+
+.navbar {
+    
+    background-color: aqua;
+    position: fixed;
+    transform:translateX(120%);
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    transition: transform 500ms ease-in-out;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline:2rem;
+    padding-block:3rem;
+}
+li{
+    margin-block: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ACTIVE STATES */
+.nav_open .navbar{
+    transform:translateX(0%);
+}
+
+.nav_open .hamburger::before{
+    transform: rotate(90deg) translateX(6px) ;
+}
+.nav_open .hamburger{
+    transform: rotate(.625turn);
+}
+.nav_open .hamburger::after{
+    opacity: 0;
+}
