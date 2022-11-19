@@ -1,6 +1,6 @@
-var menuButton  = document.querySelector(".menuButtonContainer");
+let menuButton  = document.querySelector(".menuButtonContainer");
 
-var navLinks = document.querySelectorAll(".navlinks");
+let navLinks = document.querySelectorAll(".navlinks");
 // var classes = document.body.classList;
 
 menuButton.addEventListener('click',()=>{
@@ -9,9 +9,9 @@ menuButton.addEventListener('click',()=>{
 });
 // console.log(classes);
 
-navLinks.forEach(link=>{
+navLinks.forEach(mylink=>{
 
-    link.addEventListener('click',()=>{
+    mylink.addEventListener('click',()=>{
         document.body.classList.remove("nav_open");
     });
 });
