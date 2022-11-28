@@ -3,6 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#main_header{
+
+ display: flex;
+ justify-content: space-between;
+}
+.logo{
+  /* border: 1px solid black; */
+  
+
+}
+.logo a{
+  /* border: 1px solid black; */
+  text-decoration: none;
+  color: black;
+
+}
+button{
+    background-color: transparent;
+    border: none; 
+}
+span,span::before,span::after{
+    
+    display: block;
+    background-color: red; 
+    width: 2rem;
+    height: 3px;
+
+}
+span{
+    /* position: absolute; */
+    right: 1rem;
+}
+
+span::before{
+    content: "";
+    position: absolute;
+    margin-top: -6px;
+}
+span::after{
+    content: "";
+    position: absolute;
+    margin-top: 6px;
+}
+.navbar{
+    display: none;
+}
+img{
+    transition: 0.3s;
+}
+
+/*
 #main_header{
  position: relative;
  display: flex;
@@ -74,7 +126,7 @@ a{
     color: black;
 }
 
-/* ACTIVE STATES */
+/* ACTIVE STATES 
 .nav_open .navbar{
     transform:translateX(0%);
 }
@@ -87,4 +139,4 @@ a{
 }
 .nav_open .hamburger::after{
     opacity: 0;
-}
+} 
