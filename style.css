@@ -48,13 +48,16 @@ span::after{
     margin-top: 6px;
 }
 .navbar{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
 }
 img{
     transition: 0.3s;
 }
 
-/*
+
 #main_header{
  position: relative;
  display: flex;
@@ -120,13 +123,14 @@ ul{
 }
 li{
     margin-block: 1rem;
+    margin-inline: 1rem;
 }
 a{
     text-decoration: none;
     color: black;
 }
 
-/* ACTIVE STATES 
+/* ACTIVE STATES  */
 .nav_open .navbar{
     transform:translateX(0%);
 }
